@@ -1,0 +1,294 @@
+*{margin: 0; padding: 0;}
+
+body{
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
+}
+
+.menu{
+list-style:none;
+border:1px solid #c0c0c0;
+float:left;
+}
+
+.menu li{
+  position:relative;
+  float:left;
+  border-right:1px solid #c0c0c0;
+  }
+
+  .menu li a
+  {color:#333; text-decoration:none; padding:5px 10px; display:block;}
+
+.menu li a:hover{
+background:#333;
+color:#fff;
+-moz-box-shadow:0 3px 10px 0 #CCC;
+-webkit-box-shadow:0 3px 10px 0 #ccc;
+text-shadow:0px 0px 5px #fff;
+}
+
+.menu li  ul{
+  position:absolute;
+  top:25px;
+  left:0;
+  background-color:#fff;
+  display:none;
+  }
+
+  .menu li:hover ul, .menu li.over ul{display:block;}
+  
+  .menu li ul li{
+    border:1px solid #c0c0c0;
+    display:block;
+    width:150px;
+    }
+
+    #banner {
+      Display:block;
+    }
+.container {
+  border:2px solid;
+  display:grid;
+  grid-template-columns:repeat(2, 1fr) 4fr repeat(2, 1fr);
+  grid-template-rows: 50px 200px 200px;
+}
+
+.item-a {
+text-align: center;
+background-color:orange;
+
+}
+.item-b {
+  text-align: center;
+  background-color:red;}
+ 
+ 
+ /* Background Colors */
+ header {
+  background-color: #4c7baa;
+  width: auto;  
+ 
+}
+ body {
+  background-color: #f7f7f7;
+}
+
+footer {
+  background-color: #4c7baa;
+}
+
+
+#CPqCTR {
+display: flex ;
+justify-content: center;
+align-items: center;
+padding: 5px;
+gap:30px;
+}
+
+
+#apresentação {
+  display:flex;
+  color:black;
+  justify-content: center;
+  flex-grow: 2;
+  align-items: center;
+  gap:50px;
+
+  }
+
+  .texto1{
+    max-width:400px;
+    text-align: justify
+  }
+
+  .imgcentro {
+    float:left;
+     
+    
+    }
+    
+
+
+
+
+#logoo {
+display:inline-block;
+height:50px;
+width: 50px;
+margin:10px;
+border-radius: 50px;
+
+}
+
+
+.img{
+max-width:500%;
+height:auto;
+position: relative;
+margin:30px;
+
+}
+  
+#images {
+height:300px;  
+width: 100%; 
+position:relative; 
+display: flex;
+justify-content: center;
+margin:50px 50px 50px 50px; 
+}
+
+
+.menu1 {
+  color:white;
+  text-decoration: none;
+  background-color: #003366;
+  padding:07px;
+  margin:auto 5vw auto auto;
+  border-radius: 20px;
+}
+.menu2 {
+    color:white;
+    text-decoration: none;
+    background-color: #003366;
+    padding:07px;
+    margin:auto 5vw auto auto;
+    border-radius: 20px;
+  
+    
+}
+.menu3 {
+    color:white;
+    text-decoration: none;
+    background-color: #003366;
+    padding:07px;
+    margin:auto 5vw auto auto;
+    border-radius: 20px;
+    
+}
+.menu4 {
+    color:white;
+    text-decoration: none;
+    background-color: #003366;
+    padding:07px;
+    margin:auto 5vw auto auto;
+    border-radius: 20px;
+    
+}
+
+
+/* Título */
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 20;
+    padding: 10;
+  }
+  
+ 
+  #título {
+    font-family: sans-serif;
+    color: rgba(255, 255, 255, .1);
+    background: linear-gradient(
+      to right,
+      rgb(76, 217, 105),
+      rgb(52, 170, 220),
+      rgb(88, 86, 217),
+      rgb(255, 45, 83),
+      rgb(255, 45, 83),
+      rgb(88, 86, 217),
+      rgb(52, 170, 220),
+      rgb(76, 217, 105)
+    );
+    background-size: 400%;
+    -webkit-background-clip: text;
+    font-weight: 700;
+    font-size: 2em;
+    animation: sTransition 10s linear infinite;
+  }
+  @keyframes sTransition {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #4c7baa;
+   
+  }
+  
+  /* Navigation Bar Styling */
+  nav {
+    float: left;
+    width: 25%;
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+
+  
+  /* Main Content Styling */
+  .main {
+    float: left;
+    width: 75%;
+    background-color: #f7f7f7;
+    padding: 20px;
+  }
+  
+  /* Footer Styling */
+
+  footer {
+    font-family: 'monsterrat','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:white;
+    text-align: center;
+    max-height:400px;
+    
+  }
+.e-mail {
+    height:3vh;
+    color:#ffffff;
+
+}
+.phone {
+  height:3vh;
+
+}
+.local {
+  height:3vh;
+
+}
+#contato{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    text-align: left;
+    padding:0px;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+#cpqctr {
+  text-align: left;
+}
+
+.endereço {
+    text-align:center;
+    padding:0px 0px 10px; 
+}
+table {
+  border:1px solid red;
+  text-align: left;
+  color:white;
+  margin: 1px;
+
+}
+p {
+  margin:1px;
+}
