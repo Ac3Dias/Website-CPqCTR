@@ -232,8 +232,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   100% { opacity: 1; }
 }
 
-#corpodosite {
-height:1500px;
+
 
 }
 
@@ -272,7 +271,7 @@ height: 300px;
     
        }
 
-       .frase {
+       /*.frase {
         
         font-size:-1rem;
         color: rgb(255, 255, 255);
@@ -283,9 +282,11 @@ height: 300px;
         background-repeat: no-repeat;
         height: 300px;
       
-      
-      
        }*/
+
+       
+
+
        #section4 {
         border:3px solid rgb(48, 19, 207);
         height: 300px;
@@ -320,11 +321,6 @@ background-color:orange;
   
     }
 
-
-footer {
-background-color: #4c7baa;
- 
-}
 
 
 #CPqCTR {
@@ -479,13 +475,36 @@ background-color: #e01111;
 }
   /* Footer Styling */
 
+
   footer {
     font-family: 'monsterrat','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:white;
     text-align: center;
-    max-height:100px;
+    max-height:140px;
     padding: 30px;
         
+  }
+  /*FOOTER*/
+footer {
+  background-color: #4c7baa;
+   
+  }
+  h3 {
+    font-size: 1.3rem;
+    display: block;
+    color:rgb(187, 190, 7);
+    text-shadow:1px  #fc0505;
+    
+    
+  }
+  
+  p3 {
+    font-size: 1rem;
+   color:rgb(187, 190, 7);
+   font-weight: bold;
+  
+   margin-left: 60%;
+   
   }
 .e-mail {
     height:3vh;
@@ -524,7 +543,8 @@ border-radius: 30px;
 .endereço {
     text-align:center;
     padding:0px 0px 10px 10px;
-    margin-bottom: 122px;
+    
+   
 }
 
 
@@ -556,7 +576,6 @@ p {
 
 .slideshow-container {
   
-
 width: 30%;
 Top:52px;
 left:800px;
