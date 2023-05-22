@@ -132,27 +132,7 @@ color:#0c0c0c;
 }
 
 /*SLIDE SHOW LANDING PAGE*/
-@keyframes mudarImagem0 {
-  0% { opacity: 1; }
-  25% { opacity: 0; }
-  50% { opacity: 0; }
-  75% { opacity: 0; }
-  100% { opacity: 0; }
-}
 
-
-.quadro img {
-  animation: mudarImagem 8s infinite;
-border-radius: 10px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width:350px;
-  height:300px;
-  position:absolute;
-  top:50vh;
-  left: 65vw;
- 
-
-}
 @keyframes mudarImagem1 {
   0% { opacity: 0; }
   25% { opacity: 1; }
@@ -163,26 +143,34 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 
 .quadro1 img {
+display:block;
   animation: mudarImagem 8s infinite;
 border-radius: 10px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width:350px;
-  height:300px;
   position:absolute;
-  top:50vh;
-  left: 65vw;
+  max-width:35vw;
+  max-height:35vh;
+  top:14%;
+  right:28vw; 
+  left: 78vw;
+
  
 
 }
+
 .quadro2 img {
+  display:block;
   animation: mudarImagem2 8s infinite;
 border-radius: 10px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width:350px;
-  height:300px;
-  position:absolute;
-  top:50vh;
-  left: 65vw;
+position:absolute;
+max-width:35vw;
+max-height:35vh;
+top:14%;
+right:28vw; 
+left: 78vw;
+
+  
  
 
 }
@@ -194,14 +182,16 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   100% { opacity: 0; }
 }
 .quadro3 img {
+  display:block;
   animation: mudarImagem3 8s infinite;
 border-radius: 10px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width:350px;
-  height:300px;
-  position:absolute;
-  top:50vh;
-  left: 65vw;
+position:absolute;
+max-width:35vw;
+max-height:35vh;
+top:14%;
+right:28vw; 
+left: 78vw;
  
 
 }
@@ -213,16 +203,19 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   100% { opacity: 0; }
 }
 .quadro4 img {
-  animation: mudarImagem4 8s infinite;
+display:block;
+animation: mudarImagem4 8s infinite;
 border-radius: 10px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width:350px;
-  height:300px;
-  position:absolute;
-  top:50vh;
-  left: 65vw;
+position:absolute;
+  max-width:35vw;
+  max-height:35vh;
+  top:14%;
+  right:28vw; 
+  left: 78vw;
+   
  
-
+ 
 }
 @keyframes mudarImagem4 {
   0% { opacity: 0; }
@@ -237,61 +230,150 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 
 #corpodosite1pg {
-  height: 635px;
+  min-height: 74.5vh;
+  
 
 }
 /*SECTIONS*/
-    #section1 {
-      height: 360px;
-      border:3px solid red;
+    #section1 { /*APRESENTAÇÃO*/
+      border:3px solid rgb(194, 8, 8);
+      margin-top: 0;
+      height: 60vh;
       Display:block;
-      margin-bottom: 0px
-    };
+      background-color:#3174b644;
+    }
 
-    #section2 {
+    #section2 { /*EVENTOS*/
+display: inline-block;
+padding: 7%;
 border:3px solid rgb(11, 8, 194);
-height: 300px;
-
-
+background-color: #eaecfa;
+height: 100vh;
+width: 100%;
+padding-top: 0%;
 
 
    }
+
+   .Título1 {
+    color:rgb(249, 247, 247);
+    text-shadow: black;
+    font-size: 4em;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 8%;
+    text-shadow: 1px 1px 3px #0c0c0c}
    
-   #section3 {
+   #section3 { /*ÁTOMO*/
     display:flex;
     justify-content: center;
     align-items: center;
-    border:3px solid rgb(227, 243, 9);
     height: 300px;
+    max-width:100%;
     background-image: url("Assets/atomo2.jpg");
     background-size: cover;
     background-attachment: fixed;
+
+  
   
     
     
        }
 
-       /*.frase {
-        
-        font-size:-1rem;
-        color: rgb(255, 255, 255);
-        font-weight: bold;
-        text-align: center;
-        background-image: url("Assets/atomo2.jpg");
-        background-attachment: fixed;
+       #section4 { /*CONTATO*/
+        display:block;
+        height:100vh;
+        width:100%;
+        background-image:url("Assets/mulher-de-negocios-mao-com-graficos-financeiros-e-telefone-celular-sobre-o-laptop-na-mesa.jpg");
         background-repeat: no-repeat;
-        height: 300px;
+        background-size: cover;
+        background-position: center;
       
-       }*/
+        
+                  
+        
+           }
+.p4 {
+color: rgb(188, 186, 186);
+margin-left:80vw;
+margin-top: 70vh;
+}
+
+  
+  
+.Título2 {
+color:rgb(249, 247, 247);
+text-shadow: black;
+font-size: 4em;
+text-align: center;
+padding-top: 5%;
+padding-bottom: 0%;
+text-shadow: 1px 1px 3px #0c0c0c
+
+}
+
+           #contato{
+            display: block;
+            background-color: #ece3e3b4;
+           padding: 50px 50px 50px 50px;
+            border-radius: 5px;
+            max-width: 400px;
+            height: 200px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            margin:auto;
+            top: 15vh;
+            font-size: 3rem;
+            position: relative;
+          }
+
+#section5 { /*MAPA*/
+top:0;
+}
+          
+    
+          
+           
+          .e-mail {
+              height:5vh;
+              color:#ffffff;
+          
+          }
+          .phone {
+            height:5vh;
+          
+          }
+
+
+h3 {
+  font-size: 1.3rem;
+  display: block;
+  color:rgb(255, 230, 0);
+  text-shadow: 1px 1px 3px #0c0c0c;
+
+  
+  
+}
+
+p5 {
+font-size: 1rem;
+ color: block;
+ color:rgb(251, 255, 0);
+ font-weight: bold;
+ margin-left: 60%;
+ text-shadow: 1px 1px 3px #0c0c0c;
+ 
+}
+
+
+       
+
+  
 
        
 
 
-       #section4 {
-        border:3px solid rgb(48, 19, 207);
-        height: 300px;
-       }
-  
+     
 .container {
   border:2px solid;
   display:grid;
@@ -338,10 +420,10 @@ padding: 20px;
 
 #apresentação {
   display:flex;
-  background-color: hsl(208, 100%, 97%);
+  color:white;
   border-color: #4c7baa;
 border-radius: 3px;;
-  width: 50vw;
+  width: 70vw;
   text-align: justify;
   color:black;
   justify-content: left;
@@ -364,7 +446,7 @@ border-radius: 3px;;
   .imgcentro {
 float:center;
 width: 100%;
-height:100%;
+height:40vh;
 top:40px;
 
 
@@ -489,52 +571,54 @@ footer {
   background-color: #4c7baa;
    
   }
-  h3 {
-    font-size: 1.3rem;
-    display: block;
-    color:rgb(187, 190, 7);
-    text-shadow:1px  #fc0505;
-    
-    
-  }
-  
-  p3 {
-    font-size: 1rem;
-   color:rgb(187, 190, 7);
-   font-weight: bold;
-  
-   margin-left: 60%;
-   
-  }
-.e-mail {
-    height:3vh;
-    color:#ffffff;
+
+
+p {
+font-size: 1rem;
+}
+
+p2 {
+font-size: 1.05rem;
+
+
+
 
 }
-.phone {
-  height:3vh;
 
-}
+
+
 .local {
-  height:3vh;
+  height:5vh;
+  font-weight: bold;
+}
 
-}
-#contato{
-  display:inline;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: left;
-    padding:10px;
-    margin-left: 100px;
-    top: 150px;
-    font-size:large;
-position: relative;
-   
-}
+
 .mapa {
+display: block;
+top: 90vh;
+margin:auto;
+width: 100%;
 
-margin-top: 50px;
-margin-left: 80%;
-border-radius: 30px;
+
+
+}
+
+.equipe {
+  border:3px dashed red;
+  display:inline-block;
+  width:100vw;
+  height:fit-content;
+color:rgb(0, 0, 0);
+margin-top: 0vh;
+padding: 20px;
+margin-left:auto; 
+text-align: center;
+background-color:#3174b644;
+
+
+
+
+
 }
 
 
@@ -581,3 +665,32 @@ Top:52px;
 left:800px;
 
 }
+/*EQUIPE*/
+.polaroid {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  width: 250px;
+  display: inline-block;
+  margin-left: 3.8vw;
+  margin-right: 0vw;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+  
+
+}
+
+.polaroid img {
+  width: 100%;
+  display: block;
+}
+
+.polaroid .caption {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+
