@@ -3,7 +3,11 @@
 
 .menu{
   list-style:none;
-  float:left;
+  float:center;
+
+
+  
+
   
   
   }
@@ -67,11 +71,14 @@
       }
     /* Navigation Bar Styling */
     nav {
+      position: fixed;
       display: flex;
       height:32px;
       width:auto;
-      top:50px;
-      justify-content: center;
+      top:8vh;
+      justify-content: left;
+      margin-left: 7.5vw;
+      margin-top: 0.5vh;
       
       
         
@@ -148,11 +155,11 @@ display:block;
 border-radius: 10px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position:absolute;
-  max-width:35vw;
-  max-height:35vh;
-  top:14%;
+  width:20vmax;
+  height:19vmax;
+  top:13.5%;
   right:28vw; 
-  left: 78vw;
+  left: 76vw;
 
  
 
@@ -164,11 +171,11 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 border-radius: 10px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 position:absolute;
-max-width:35vw;
-max-height:35vh;
-top:14%;
+width:20vmax;
+height:19vmax;
+top:13.5%;
 right:28vw; 
-left: 78vw;
+left: 76vw;
 
   
  
@@ -187,11 +194,11 @@ left: 78vw;
 border-radius: 10px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 position:absolute;
-max-width:35vw;
-max-height:35vh;
-top:14%;
+width:20vmax;
+height:19vmax;
+top:13.5%;
 right:28vw; 
-left: 78vw;
+left: 76vw;
  
 
 }
@@ -202,17 +209,17 @@ left: 78vw;
   75% { opacity: 1; }
   100% { opacity: 0; }
 }
-.quadro4 img {
+/*.quadro4 img {
 display:block;
 animation: mudarImagem4 8s infinite;
 border-radius: 10px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 position:absolute;
-  max-width:35vw;
-  max-height:35vh;
-  top:14%;
-  right:28vw; 
-  left: 78vw;
+width:20vmax;
+height:19vmax;
+top:13.5%;
+right:28vw; 
+left: 76vw;
    
  
  
@@ -223,7 +230,7 @@ position:absolute;
   50% { opacity: 0; }
   75% { opacity: 0; }
   100% { opacity: 1; }
-}
+}*/
 
 
 
@@ -236,11 +243,11 @@ position:absolute;
 }
 /*SECTIONS*/
     #section1 { /*APRESENTAÇÃO*/
-      border:3px solid rgb(194, 8, 8);
-      margin-top: 0;
-      height: 60vh;
+      margin: 0;
+      height: 50vh;
       Display:block;
       background-color:#3174b644;
+      margin-top: 5.5vh;
     }
 
     #section2 { /*EVENTOS*/
@@ -268,17 +275,35 @@ padding-top: 0%;
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 400px;
     max-width:100%;
     background-image: url("Assets/atomo2.jpg");
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
+    
 
   
   
     
     
        }
+       /*.celular {
+            display: inline-block;
+            background-color: #f1151500;
+            border-radius: 5px;
+            max-width: 171px;
+            height: 352px;
+            margin-left:74.8vw;
+            top: -70vh;
+            font-size: 3rem;
+            position: relative;
+            border-radius: 10px;
+            transform: rotate(-4deg);
+            font-size:2em;
+            padding-top: 10vh;
+        
+       }*/
 
        #section4 { /*CONTATO*/
         display:block;
@@ -295,8 +320,9 @@ padding-top: 0%;
            }
 .p4 {
 color: rgb(188, 186, 186);
-margin-left:80vw;
-margin-top: 70vh;
+margin-left:75vw;
+margin-top: 48vh;
+position:sticky;
 }
 
   
@@ -315,16 +341,18 @@ text-shadow: 1px 1px 3px #0c0c0c
            #contato{
             display: block;
             background-color: #ece3e3b4;
-           padding: 50px 50px 50px 50px;
-            border-radius: 5px;
-            max-width: 400px;
-            height: 200px;
+            padding:  20vh 8vw 2vh 15vw;
+            width: 40%;
+            height: 60%;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             text-align: center;
             margin:auto;
-            top: 15vh;
-            font-size: 3rem;
+            top: 5vh;
+            
             position: relative;
+
+           
+          
           }
 
 #section5 { /*MAPA*/
@@ -337,6 +365,7 @@ top:0;
           .e-mail {
               height:5vh;
               color:#ffffff;
+              
           
           }
           .phone {
@@ -350,6 +379,11 @@ h3 {
   display: block;
   color:rgb(255, 230, 0);
   text-shadow: 1px 1px 3px #0c0c0c;
+  position: relative;
+  top:0vh;
+ 
+  
+
 
   
   
@@ -406,6 +440,8 @@ background-color:orange;
 
 
 #CPqCTR {
+  position: absolute;
+position: fixed;
 display: flex ;
 justify-content: center;
 align-items: center;
@@ -444,10 +480,13 @@ border-radius: 3px;;
   }
 
   .imgcentro {
+    position: relative;
 float:center;
 width: 100%;
 height:40vh;
-top:40px;
+top:9vh;
+bottom: 0;
+
 
 
       }
@@ -524,11 +563,11 @@ margin:50px 50px 50px 50px;
   
   /* Header Styling */
   header {
-    display: block;
-    background-color: #4c7baa;
+    
+  display: block;
+  background-color: #4c7baa;
   width: auto;  
-background-color: none;
-top:11px;
+  top:5vh;
     
    
   }
