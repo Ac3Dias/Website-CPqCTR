@@ -1,2 +1,2 @@
 # Website-CPqCTR
-Versão 22.05.23
+Versão 29.05.23 Responsivo para dispositivos mobile
