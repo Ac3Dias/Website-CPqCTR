@@ -6,52 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPqCTR - Centro de Pesquisas em Ciências e Tecnologias das Radiações</title>
     <link rel="stylesheet" href="style.css"> <!--Referenciado ao css-->
-    
+    <style>
+      @media screen and (min-width:320px) and (max-width:768px) {
+        body{
+          width: 100vw;
+          flex-basis: 100px;        
+        
+        }
+
+        #logoo {
+          display: none;
+        }
+        header {
+          display: inline-flex;
+          flex-direction: column;
+          height: 20vh;
+          
+          
+          
+        }
+
+        nav  {
+         
+          flex-direction: column;
+          top:10vh;
+          width: fit-content;
+          left:1px;
+          background-image: none;
+          color:black;
+          justify-content:flex-start;
+      
+          
+
+          
+        }
+       
+
+
+        #corpodosite1pg {
+  height:fit-content;
+  padding-top:20vh;
+
+
+
+}
+    }
+    </style>
   </head>
-
 <body ID="body">
-
-<header ID="header">
- 
-<div ID="CPqCTR" ><img ID="logoo" src="Assets\atomo2.jpg" alt="logoo"><h1 ID= "título">CPqCTR - Centro de Pesquisas em Ciências e Tecnologias das Radiações</h1></div>
-
+ <header ID="header">
+<div ID="CPqCTR" ><img ID="logoo" src="Assets\atomo2.jpg" alt="logoo"><h1 ID= "título"><span>CPqCTR </span> <br> Centro de Pesquisas em Ciências <br>e Tecnologias das Radiações</h1></div>
+<div>
+  <nav>
+    <ul class="menu">
+      <li><a  href="index.html">Home</a></li>
+      <li><a  href="O Centro.html">O Centro</a></li>
+      <li><a class="lab" href="#">Laboratórios</a>
+        <ul>
+          <li><a  href="LRAD.html">LRAD</a></li>
+          <li><a  href="#">LPA</a></li>
+          <li><a  href="#">LARX</a></li>
+          <li><a  href="#">LAMP</a></li>
+          <li><a  href="#">LEG</a></li>
+          <li><a  href="#">LEL</a></li>
+          <li><a  href="#">LARX</a></li>
+   </ul>
+</li>
+      <li><a class="linhas" href="#">Linhas de Pesquisa</a>
+        <ul>
+          <li><a href="#">Física</a></li>
+          <li><a href="#">Filtros</a></li>
+          <li><a href="#">Phantons</a></li>
+   </ul>
+</li>
+      <li><a class="" href="#section3">Notícias & Eventos</a></li>
+      <li><a class="" href="equipe.html">Equipe</a></li>               
+      <li><a class="" href="#">Links</a></li>
+      <li><a class="" href="index.html#section4">Contato</a></li>
+  </ul>
+  </nav>
+</div>
 </header>
 
-
-
-
-<main ID="main">
-  <div>
-    <nav>
-      <ul class="menu">
-        <li><a  href="index.html">O Centro</a></li>
-        <li><a class="lab" href="#">Laboratórios</a>
-          <ul>
-            <li><a  href="LRAD.html">LRAD</a></li>
-            <li><a  href="#">LPA</a></li>
-            <li><a  href="#">LARX</a></li>
-            <li><a  href="#">LAMP</a></li>
-            <li><a  href="#">LEG</a></li>
-            <li><a  href="#">LEL</a></li>
-            <li><a  href="#">LARX</a></li>
-     </ul>
-</li>
-        <li><a class="linhas" href="#">Linhas de Pesquisa</a>
-          <ul>
-            <li><a href="#">Física</a></li>
-            <li><a href="#">Filtros</a></li>
-            <li><a href="#">Phantons</a></li>
-     </ul>
-</li>
-        <li><a class="" href="#section2">Notícias & Eventos</a></li>
-        <li><a class="" href="equipe.html">Equipe</a></li>               
-        <li><a class="" href="#">Links</a></li>
-        <li><a class="" href="#section4">Contato</a></li>
-        <li><a class="" href="#section5">Localização</a></li>
-    </ul>
-    </nav>
-
-</div>
 
   <section ID="corpodosite1pg">
     
