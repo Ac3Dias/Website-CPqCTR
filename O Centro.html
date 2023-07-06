@@ -1,200 +1,322 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CPqCTR - Centro de Pesquisas em Ciências e Tecnologias das Radiações</title>
-    <link rel="stylesheet" href="style.css"> <!--Referenciado ao css-->
-   <style>
-     @media screen and (min-width:320px) and (max-width:768px) {
-        body{
-          width: 100vw;
-          flex-basis: 100px;        
-        
-        }
 
-        #logoo {
-          display: none;
-        }
-        header {
-          display: inline-flex;
-          flex-direction: column;
-          height: 20vh;
-          
-          
-          
-        }
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CPqCTR - Centro de Pesquisas em Ciências e Tecnologias das Radiações</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css"> <!--Referenciado ao css-->
+  <style>
+    @media screen and (min-width:320px) and (max-width:768px) {
+      main {
+        width: 100vw;
+        display: block;
+        margin: auto;
+      }
 
-        nav  {
-         
-          flex-direction: column;
-          top:10vh;
-          width: fit-content;
-          left:1px;
-          background-image: none;
-          color:black;
-          justify-content:flex-start;
-      
-          
-
-          
-        }
-       
+      body {
+        width: 100vw;
 
 
+      }
+
+      .navbar {
+        display: block;
+        margin: auto;
+        width: 100vw;
+        color: black;
+
+      }
 
 
-        .banner{
-         object-fit:fill;
-         width: 100%;
-         
-        }
-        #section6 { /*O CENTRO*/
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap:1px;
-    /*border:3px solid rgb(11, 8, 194);*/
-    background-color: #eaecfa;
-    height:fit-content;
-    width: 100%;
-    padding-top: 1%;
-    justify-content: center;
-    
-    
-       }
-       #section7 { 
-        height:fit-content;
+      li {
         display: flex;
-        flex-wrap: wrap;
+        background-color: rgba(225, 225, 238, 0.173);
+        background-size: 20px;
+        margin-top: 1%;
+        align-items: right;
+        padding: 0.3%;
+        text-align: left;
+
+      }
+
+      li:hover {
+        color: white;
+        background-color: #2bad61;
+
+
+      }
+
+      .nav-item {
+        border: 3px solid rgba(255, 0, 0, 0);
+        width: 30vw;
+        align-items: end;
+        background-color: #4c7baa;
+        color: #ffffff;
         flex-direction: row;
-        gap:1px;
-        background-color: #cccfe3;
+
+
+
+      }
+
+      #logoo {
+        display: none;
+      }
+
+
+
+
+
+      #sobrenos {
+        margin-top: 1vh;
         width: 100%;
-        padding: 5%;
+        text-align: left;
+        padding-bottom: 5%;
+        font-size: 4rem;
+        font-weight: bold;
+      }
+
+      #texto_aps_2 {
+        margin-top: 0;
+        width: 100%;
+        height: 78vh;
         justify-content: center;
-        
-        
-           }
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        font-size: 1.2rem;
+      }
 
-           #texto_apresentação {
-            padding: 30px 5vw;
-            text-align: justify;
-           }
-           
-           /*.imginauguração{
-        
-           
-           }*/
-           #Título3 {
-top:167vh;
-left: 7vw;
-
-           }
+      #section6 {
+        object-fit: scale-down;
+        margin-top: 0%;
+        justify-content: center;
 
 
+      }
+
+      .img_inauguração {
+        position: absolute;
+        justify-content: left;
+        top: 50vh;
+        object-fit: fill;
+        width: 90vw;
+        height: 250px;
+        margin-left: 1px;
+        padding: 1%;
+        background-color: #cccfe3;
+
+      }
+
+      #texto_aps_3 {
+        margin-top: 0vh;
+        width: 100%;
+        height: fit-content;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 15px;
+        padding: 5%;
+        gap: 0;
+
+
+      }
+
+      .texto_central {
+        padding: 5%;
+        padding-top: 5%;
+      }
+
+      #texto_aps_4 {
+        margin-top: 0vh;
+        width: 100%;
+        height: fit-content;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 15px;
+        padding: 5%;
+        gap: 0;
+
+
+      }
+
+      .texto_direita {
+        padding: 2%;
+        padding-top: 5%;
+        width: 100%;
+      }
+
+      #section7 {
+        object-fit: scale-down;
+        background-attachment: fixed;
+        justify-content: center;
+        background-position: -44vw;
+        background-size: cover;
+        height: 100vh;
+
+      }
+
+      footer {
+        width: 100%;
+      }
 
 
 
-
-    
-    
-
-
-
-
-   
     }
-    </style>
-  </head>
-<body ID="body">
- <header ID="header">
-<div ID="CPqCTR" ><img ID="logoo" src="Assets\atomo2.jpg" alt="logoo"><h1 ID= "título"><span>CPqCTR </span> <br> Centro de Pesquisas em Ciências <br>e Tecnologias das Radiações</h1></div>
-<div>
-  <nav>
-    <ul class="menu">
-      <li><a  href="index.html">Home</a></li>
-      <li><a  href="O Centro.html">O Centro</a></li>
-      <li><a class="lab" href="#">Laboratórios</a>
-        <ul>
-          <li><a  href="LRAD.html">LRAD</a></li>
-          <li><a  href="#">LPA</a></li>
-          <li><a  href="#">LARX</a></li>
-          <li><a  href="#">LAMP</a></li>
-          <li><a  href="#">LEG</a></li>
-          <li><a  href="#">LEL</a></li>
-          <li><a  href="#">LARX</a></li>
-   </ul>
-</li>
-      <li><a class="linhas" href="#">Linhas de Pesquisa</a>
-        <ul>
-          <li><a href="#">Física</a></li>
-          <li><a href="#">Filtros</a></li>
-          <li><a href="#">Phantons</a></li>
-   </ul>
-</li>
-      <li><a class="" href="index.html#section2">Notícias & Eventos</a></li>
-      <li><a class="" href="equipe.html">Equipe</a></li>               
-      <li><a class="" href="#">Links</a></li>
-      <li><a class="" href="index.html#section4">Contato</a></li>
-    
-  </ul>
-  </nav>
-</div>
-</header>
+  </style>
+</head>
 
-<main ID="main">
-  <img class="banner" src="Assets\Externa06.jpg" alt="CTR">
-</a></div>
+<main>
+  <header> <!--NAVBAR-->
 
-<section ID="section6">
-  <img class="img_inauguração" src="Assets\inauguracao.jpg" alt="inauguração">
-  <p ID="texto_apresentação">A inauguração deste Centro, em setembro de 2007, é o fruto de 7 anos de atividades do grupo de pesquisas FIMED (Núcleo de Física Médica e Ambiental da UESC) em quatro diretrizes básicas: 1) desenvolvimento de pesquisas científicas e tecnológicas de caráter básico e aplicado com uso de radiações; 2) qualificação de recursos humanos especializados na área; 3) captação de recursos externos; 4) o estabelecimento e consolidação de parcerias com instituições nacionais e internacionais de referência.
-    O Centro de Pesquisas em Ciências e Tecnologias das Radiações apresenta resultados concretos obtidos nestes anos: dentre destes, destaca-se a produção de mais 150 artigos publicados em revistas científicas e trabalhos em congresso, 5 patentes e registros de software, a formação de 20 mestres, a orientação concluída de 14 alunos de iniciação científica dos cursos de Física, Computação e Biomedicina, acompanhado de uma produção significativa de artigos científicos, apresentações em congressos, um livro e vários trabalhos técnicos aplicados na rede hospitalar regional. Atualmente, nas diferentes linhas do centro, são desenvolvidos vários projetos de formação de pesquisadores, que incluem 7 doutorandos, 12 mestrandos e 14 alunos de iniciação científica, ligados aos programas de pós-graduação: PROFISICA, PRODEMA, DDMA, PROCIMM, PPGMC, PPGQUIM. A concretização da obra do CPqCTR é também o resultado do apoio em recursos da FAPESB, do CNPq e da própria UESC em um montante total aproximado de R$ 700.000,00. Desde a sua inauguração, o CPqCTR vem adquirindo e instalando novos e importantes equipamentos a partir de projetos aprovados em agências de apoio a pesquisa, como CAPES, CNPq, FINEP e FAPESB, por um montante total estimado em R$2.000.000,00.</p>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">CPqCTR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="height: 30px;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="O Centro.html">O Centro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Laboratórios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Pesquisa.html">Linhas de Pesquisa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="equipe.html">Equipe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#section4">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#section5">Localização</a>
+            </li>
 
-</section>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Links
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <!--Navbar text with an inline element-->
+          </span>
+        </div>
+      </div>
+    </nav>
+    <!--END OF NAVBAR-->
+  </header>
 
-  <section ID="section7">
-
-<div class="container">
-   <h1 ID="Título3" Class="Título2">Produção Científica</h1>
-   <div class="card"><h2>Trabalhos Apresentados<p>50</p></h2>
-</div>
-   <div class="card"><h2>Artigos <br>Publicados<p>23</p></h2></div>
-   <div class="card"><h2>Projetos em Execução<p>7</p></h2></div>
-
-</div>
-
-</section>
-
-
-
+  <body>
 
 
-<section ID="section">
+    <section ID="section6">
 
-</section>
+      <div id="texto_aps_2">
+        <h2 ID="sobrenos" class="Título2">Sobre nós</h2><br><br>
+        <div><img class="img_inauguração" src="Assets\inauguracao.jpg" alt="inauguração"></div>
+        <div class="legenda_img"> Inaugurado em 21 de Setembro de 2007, o Centro de Pesquisas em Ciências e Tecnologias
+          das Radiações - (CPqCTR) é resultado de 7 anos de pesquisas do
+          Núcleo de Física Médica e
+          Ambiental da UESC. </div>
+        <br>
 
-<section ID="section">
+      </div>
+      <div id="texto_aps_3">
+        <div class="texto_central"><strong> No CPqCTR são desenvolvidas pesquisas sob quatro diretrizes:</strong>
+          <br>
+          <br>
+          <div><strong>1)</strong> desenvolvimento de pesquisas científicas e tecnológicas de caráter básico e aplicado
+            com uso de
+            radiações;</div>
+          <br>
+          <div><strong>2)</strong> qualificação de recursos humanos especializados na área;</div>
+          <br>
+          <div><strong>3)</strong> captação de recursos externos;</div>
+          <br>
+          <div><strong>4)</strong> o estabelecimento e consolidação de parcerias com instituições nacionais e
+            internacionais de
+            referência.
+          </div>
+          </p>
+        </div>
+      </div>
+      <div id="texto_aps_4">
+        <div class="texto_direita">
+          <div>Atualmente, nas diferentes linhas do centro, são desenvolvidos vários projetos de formação de
+            pesquisadores, que incluem 7 doutorandos, 12 mestrandos e 14 alunos de iniciação científica, ligados aos
+            programas de pós-graduação: PROFISICA, PRODEMA, DDMA, PROCIMM, PPGMC, PPGQUIM. </div>
+          <br>
+          <div>A concretização da obra do CPqCTR é também o resultado do apoio em recursos da FAPESB, do CNPq e da
+            própria
+            UESC em um montante total aproximado de R$ 700.000,00.</div>
+          <br>
+          <div>Desde a sua inauguração, o CPqCTR vem adquirindo e instalando novos e importantes equipamentos a partir
+            de
+            projetos aprovados em agências de apoio a pesquisa, como CAPES, CNPq, FINEP e FAPESB, por um montante total
+            estimado em R$2.000.000,00.</div>
+          <br>
+          <br>
+        </div>
+    </section>
 
-</section>
+    <section ID="section7">
 
 
-</main> 
+    </section>
+
+    <section ID="section8">
+      <div class="">
+
+
+      </div>
+
+    </section>
+
+    <section ID="section">
+
+    </section>
+
+
+</main>
 
 
 <footer>
 
 
-  <div class="endereço"
-    p> <p>2023 © Ac3Dias</p> <br>UNIVERSIDADE ESTADUAL DE SANTA CRUZ </br> 
-  Campus Soane Nazaré de Andrade, Rodovia Jorge Amado, </br>
-  km 16, Bairro Salobrinho.
-  CEP 45662-900. Ilhéus-Bahia </p> <br> 
-  <p>Todos os direitos reservados.</p>
+  <div class="endereço" p>
+    <p>2023 © Ac3Dias</p> <br>UNIVERSIDADE ESTADUAL DE SANTA CRUZ </br>
+    Campus Soane Nazaré de Andrade, Rodovia Jorge Amado, </br>
+    km 16, Bairro Salobrinho.
+    CEP 45662-900. Ilhéus-Bahia </p> <br>
+    <p>Todos os direitos reservados.</p>
   </div>
-  
-  </footer>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
+
 </html>
